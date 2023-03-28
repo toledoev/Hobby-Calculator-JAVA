@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Score based on Hobbies</title>
+<style>
+fieldset {
+	background-color: #eeeeee;
+}
+
+legend {
+	background-color: gray;
+	color: white;
+	padding: 5px 10px;
+}
+
+input {
+	margin: 5px;
+}
+
+input[type=submit]:hover {
+	background-color: #90EE90;
+}
+
+input[type=reset]:hover {
+	background-color: #FFCCCB;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div>
+		<form action="/Assignment3/HobCalcServlet" method="get">
+			<fieldset>
+				<legend>Personal Information</legend>
+					Full Name:<input type="text" size=30 name="user"><br>
+					Contact Number: <input type="text" size=30 name="phone"><br>
+					Email: <input type="email" size=30 name="email"><br>
+					Address: <input type="text" size=30 name="address"><br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Hobbies</legend>
+				<p>
+					<input type="checkbox" name="running" checked>Running
+				</p>
+				<p>
+					<input type="checkbox" name="swimming" checked>Swimming
+				</p>
+				<p>
+					<input type="checkbox" name="cycling" checked>Cycling
+				</p>
+				<p>
+					<input type="checkbox" name="football" checked>Football
+				</p>
+				<p>
+					<input type="checkbox" name="soccer" checked>Soccer
+				</p>
+				<p>
+					<input type="checkbox" name="rugby" checked>Rugby
+				</p>
+
+				<p>
+					Fitness Level: <input type="radio" name="fitness" value="low">Low
+					<input type="radio" name="fitness" value="average">Average
+					<input type="radio" name="fitness" value="high" checked>High
+
+				
+				<p>
+					I'm interested in these types of music:<br> <input
+						type="checkbox" name="pop">Pop<br> <input
+						type="checkbox" name="classical">Classical<br> <input
+						type="checkbox" name="country">Country<br>
+				<p>Favourite Type of Reading</p>
+				<select name="reading">
+					<option value="HistoricalFiction" selected>Historical
+						Fiction</option>
+					<option value="HistoricalNonFiction">Historical
+						Non-Fiction</option>
+					<option value="CrimeFiction">Crime Fiction</option>
+					<option value="Romance">Romance</option>
+					<option value="Comedy">Comedy</option>
+
+				</select> 
+				<input type="submit" value="Submit"> 
+				<input type="reset" value="Reset">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
